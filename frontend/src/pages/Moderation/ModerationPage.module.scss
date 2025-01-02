@@ -1,0 +1,30 @@
+.layout {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+* {
+  box-sizing: border-box;
+}
+.arts,
+.orders {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  min-width: 20em;
+  align-items: center;
+}
+.line {
+  width: 3px;
+  height: 0.3;
+  background: black;
+  border-radius: 15px;
+  margin-top: 32px;
+}
+
+.arts > h2,
+.orders > h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}

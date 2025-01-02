@@ -1,0 +1,23 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.underContacts {
+  place-self: center;
+}
+
+.underContacts p {
+  margin: 0.5em 0;
+  place-self: start;
+  color: #333;
+  font-size: 18px;
+  font-weight: lighter;
+
+}

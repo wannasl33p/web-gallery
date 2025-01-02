@@ -1,0 +1,61 @@
+$primary: rgb(189, 255, 198);
+.layout {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.hello,
+.market {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 30px;
+  max-width: 35%;
+  min-width: 20em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(14px + 8 * (100vw - 320px) / 1000);
+}
+.navigate {
+  display: flex;
+  align-self: center;
+  width: 240px;
+  height: 60px;
+  font-size: 34px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  align-items: center;
+  transition: 0.7s;
+  margin-top: 1em;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(to bottom right, rgb(255, 255, 255), $primary);
+  place-items: center;
+}
+
+.hello {
+  background-color: #f9f9f9;
+  padding: 1em;
+}
+.market {
+  background-color: $primary;
+  padding: 0.5em;
+}
+.marketLabel {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.navigate:hover {
+  background: rgba(0, 0, 0, 1);
+  color: white;
+}
